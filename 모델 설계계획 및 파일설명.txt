@@ -1,0 +1,35 @@
+- shapvalue : 여러 input의 결과에 대한 중요도 순위를 output으로 검출하는 함수
+
+* 모델 목표 :
+	- 설계 목표 : 여러 Inputs(5개종류의 weekly 입자량, sum값(critical point를 넘긴 날의 횟수), 인터넷 이용률) 등이 사람들의 미세먼지에 대한 관심도에 얼마나 영향을 끼치는지 중요도를 분석하는것
+	- 희망 결과 : PM2.5와 PM10의 sum값(critical point를 넘긴 날의 횟수)의 관심도에 대한 중요도가 가장 큰값을 가지는 결과가 나오도록 하는것이 예상되고 희망되는 결론임
+		==> 논문이 이 방향대로 쓰여졌고 그렇기 때문에 논문을 뒷받침해주는 분석이 deep learning을 통해 나오는것을 요청하신 교수님께서 바라는것 같음
+
+* 설계계획
+	- 미세먼지 data의 변수들에 맞게 작동하도록 모델의 수정필요
+	- Data 재가공
+		==>(주간단위 관심도 data 추가하였음, PM2.5, PM10의 critical point를 넘긴 날의 횟수에 대한 일간data 추가함)
+* inputs, outputs
+	- inputs(max, sum, PM10, PM2.5, 그외 입자들(SO2, CO, NO2), concern, 인터넷 이용률 등등) 
+	- outputs : 사람들의 미세먼지에 대한 관심도
+	==> inputs들의 사람들의 미세먼지에 대한 관심도에 영향을 끼치는 요소적 중요도를 검출
+
+* finedust_dataset의 'stata' Tab의 각 variable의 의미
+	- concern : 서울 지역 월간 인터넷 노출 횟수로 측정 한 미세 먼지 관심도 (t) / refer:google trends
+	- l_concern(concernt-1) : concern의 lagged value
+	- PM2.5_days_50 : PM2.5의 농도가 50 microgram을 넘긴 날의 횟수
+	- PM2.5_days_80 : PM2.5의 농도가 80 microgram을 넘긴 날의 횟수
+	- PM10_days_80 : PM10의 농도가 80 microgram을 넘긴 날의 횟수
+	- days_50_80 : PM2_days_50 및 PM10_days_80 조건이 동시에 충족되는 일 수
+	- PM2.5 : PM2.5의 월 평균 밀도
+	- PM10 : PM10의 월 평균 밀도
+	- sum : PM2.5 및 PM10 합계의 월 평균 밀도
+	- max : 월 합계 PM2.5 및 PM10의 최대 밀도
+	- Internet : 서울 인터넷 사용 비율
+
+* 파일설명
+	- finedust_dataset : 모델에서 학습시킬 data를 모두 모아놓은 엑셀파일입니다. 기존 파일에 주간 관심도와 일간 PM2.5, PM10의 sum값(각각 50,80,80)를 추가하였습니다.
+			 가장 유용하고 핵심적인 data는 '일평균_전체물질' > 'stata' > '월평균PM_10' = '월평균_PM2.5' = '주간 관심도' Tab순이라고 개인적으로 생각합니다. 참고하시면 될것같습니다.
+	- Paper_of_finedust : 논문 원본입니다. 
+	- 모델 설계계획 및 파일설명 : 모델의 목표와 설계 및 수정시의 필요한 정보를 담았습니다.
+	- 주간 관심도 : Google_Trends의 미세먼지 관심도값을 2016-5-8부터 5년간 주간단위로 저장된 파일입니다. finedust_dataset에도 포함돼있습니다.
