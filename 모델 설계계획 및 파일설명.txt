@@ -8,7 +8,7 @@
 * 설계계획
 	- 미세먼지 data의 변수들에 맞게 작동하도록 모델의 수정필요
 	- Data 재가공
-		==>(주간단위 관심도 data 추가하였음, PM2.5, PM10의 critical point를 넘긴 날의 횟수에 대한 일간data 추가함)
+		==>(주간단위 관심도 data 추가하였음, PM2.5, PM10의 critical point를 넘긴 날의 횟수에 대한 주간data 추가함)
 * inputs, outputs
 	- inputs(max, sum, PM10, PM2.5, 그외 입자들(SO2, CO, NO2), concern, 인터넷 이용률 등등) 
 	- outputs : 사람들의 미세먼지에 대한 관심도
