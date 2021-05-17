@@ -5,9 +5,8 @@ Finedust Shapvalue(daily)
 After selecting the optimal hyper parameter, the Shap Value result according to the change of the input
 
 Model : Multi Linear Regression
-_________________________________________________________________
-Layer (type) Output Shape Param #
-=================================================================
+
+Layer (type)   Output   Shape   Param 
 dense (Dense) (None, 64) 448(Input ±100)
 _________________________________________________________________
 batch_normalization (BatchNo (None, 64) 256
