@@ -5,20 +5,31 @@ Finedust Shapvalue(daily)
 After selecting the optimal hyper parameter, the Shap Value result according to the change of the input
 
 Model : Multi Linear Regression
-
-Layer (type)   Output   Shape   Param   
-dense (Dense) (None, 64) 448(Input ±100)   
-batch_normalization (BatchNo (None, 64) 256   
-dense_1 (Dense) (None, 64) 4160   
-batch_normalization_1 (Batch (None, 64) 256   
-dense_2 (Dense) (None, 64) 4160   
-batch_normalization_2 (Batch (None, 64) 256   
-dense_3 (Dense) (None, 1) 65   
-batch_normalization_3 (Batch (None, 1) 4      
-   
-Total params: 9,733(Input ±100)
-Trainable params: 9,347(Input ±100)
+```
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                (None, 64)                576       
+_________________________________________________________________
+batch_normalization (BatchNo (None, 64)                256       
+_________________________________________________________________
+dense_1 (Dense)              (None, 64)                4160      
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 64)                256       
+_________________________________________________________________
+dense_2 (Dense)              (None, 64)                4160      
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 64)                256       
+_________________________________________________________________
+dense_3 (Dense)              (None, 1)                 65        
+_________________________________________________________________
+batch_normalization_3 (Batch (None, 1)                 4         
+=================================================================
+Total params: 9,733
+Trainable params: 9,347
 Non-trainable params: 386
+```
 Number of data : 244(weeks) x N(inputs)
    
 Inputs : [CO, NO2, PM10, PM2.5, SO2, PM10≥80, PM2.5≥50, PM2.5≥80]
