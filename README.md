@@ -34,7 +34,7 @@ Number of data : 244(weeks) x N(inputs)
    
 Inputs : [CO, NO2, PM10, PM2.5, SO2, PM10≥80, PM2.5≥50, PM2.5≥80]
    
-Particles(CO, NO2, ... SO2) : Weekly average of particle concentration
+Particles(CO, NO2, ... SO2) : Weekly average of particle concentration   
 Critical Point(PM10≥80, PM2.5≥50, PM2.5≥80) : sum of daily values of Critical Point(0~7)   
    
 Case 1) : Results of All inputs   
