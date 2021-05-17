@@ -8,21 +8,14 @@ Model : Multi Linear Regression
 
 Layer (type)   Output   Shape   Param 
 dense (Dense) (None, 64) 448(Input ±100)
-_________________________________________________________________
 batch_normalization (BatchNo (None, 64) 256
-_________________________________________________________________
 dense_1 (Dense) (None, 64) 4160
-_________________________________________________________________
 batch_normalization_1 (Batch (None, 64) 256
-_________________________________________________________________
 dense_2 (Dense) (None, 64) 4160
-_________________________________________________________________
 batch_normalization_2 (Batch (None, 64) 256
-_________________________________________________________________
 dense_3 (Dense) (None, 1) 65
-_________________________________________________________________
-batch_normalization_3 (Batch (None, 1) 4
-=================================================================
+batch_normalization_3 (Batch (None, 1) 4   
+   
 Total params: 9,733(Input ±100)
 Trainable params: 9,347(Input ±100)
 Non-trainable params: 386
