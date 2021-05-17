@@ -42,7 +42,7 @@ Case 2) : Put only the particles of the input and exclude the critical point val
 Case 3) : All values ​​of input particles except PM10 and PM2.5   
    
 Case 1)
-Inputs : {CO, NO2, PM10, PM2.5, SO2, PM10≥80, PM2.5≥50, PM2.5≥80}
+Inputs : {CO, NO2, PM10, PM2.5, SO2, PM10≥80, PM2.5≥50, PM2.5≥80}   
 Parameters : {Epoch:200, batchsize:32, loss : huber, act : sigmoid, layer_shape = [64,64,64,1]}
 
 SHAP VALUE   
@@ -51,7 +51,7 @@ Loss
 ![case1_loss](https://user-images.githubusercontent.com/79160507/118438581-906f1400-b71f-11eb-89ea-09d0a3f142c2.png)
    
 Case 2)   
-Inputs : {CO, NO2, PM10, PM2.5, SO2}
+Inputs : {CO, NO2, PM10, PM2.5, SO2}   
 Parameters : {Epoch:200, batchsize:32, loss : huber, act : sigmoid, layer_shape = [64,64,64,1]}   
    
 SHAP VALUE   
@@ -60,7 +60,7 @@ Loss
 ![case2_loss](https://user-images.githubusercontent.com/79160507/118438633-a41a7a80-b71f-11eb-9f8b-b7a4831d7cb9.png)   
 
 Case 3)
-Inputs : {CO, NO2, SO2, PM10≥80, PM2.5≥50, PM2.5≥80}
+Inputs : {CO, NO2, SO2, PM10≥80, PM2.5≥50, PM2.5≥80}   
 Parameters : {Epoch:200, batchsize:32, loss : huber, act : sigmoid, layer_shape = [64,64,64,1]}
    
 SHAP_VALUE    
