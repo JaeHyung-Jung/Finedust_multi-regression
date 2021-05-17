@@ -30,7 +30,7 @@ Total params: 9,733
 Trainable params: 9,347
 Non-trainable params: 386
 ```
-Number of data : 244(weeks) x N(inputs)
+Number of data : 1244(days) x N(inputs)
    
 Inputs : [CO, NO2, PM10, PM2.5, SO2, PM10≥80, PM2.5≥50, PM2.5≥80]
    
