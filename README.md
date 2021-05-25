@@ -80,5 +80,11 @@ Naver_DataLab도 Googletrend와 마찬가지로 해당 포털의 검색량을 �
 미세먼지 검색량의 데이터를 미세먼지에 대한 관심도값으로 사용하기로 하였음
    
 #### Analyzation with Naver_DataLab   
+![image](https://user-images.githubusercontent.com/79160507/119428549-068b0080-bd48-11eb-92d8-2b762fd4d06d.png)   
+오른쪽의 선 그래프가 Concern을 나타내고 왼쪽 막대그래프의 파란색막대는 PM10, 주황색막대는 PM2.5를 나타낸다.   
+
+GoogleTrend를 3개월단위로 일간데이터를 추출하여 붙여서 4년간의 데이터를 만들었을때의 문제점은 각 3개월기간에서 가장 검색량이 많았던 값이 상대값인 100으로 나타내어지고 실제 검색량의 비교는 힘들다.   
+따라서, Naver의 데이터를 Concern으로 사용하였을 때 입자(PM10, PM2.5)와 Concern의 분포가 GoogleTrend보다 더 비례한 경향을 나타낸다.
+
 
 
