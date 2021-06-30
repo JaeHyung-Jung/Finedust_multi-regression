@@ -1,4 +1,5 @@
 # Finedust_multi-regression
+#### 세부 모델구조는 상업적 이유로 
 
 Finedust Shapvalue(daily)
 
