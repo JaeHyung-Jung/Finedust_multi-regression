@@ -1,5 +1,5 @@
 # Finedust_multi-regression
-#### 세부 모델구조는 상업적 이유로 올리지 못함   
+#### 세부 모델구조는 상업적 이유로 올리지 못함. Detailed structure of model cannot be shared because of commercial reason.
 #
 Finedust Shapvalue(daily)
 
